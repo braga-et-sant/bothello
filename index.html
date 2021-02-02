@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=UTF-8>
+    <link rel="stylesheet" href="ot.css">
+    <script src="ot.js"></script>
+    <script src="otai.js"></script>
+    <title>Othello</title>
+
+  </head>
+
+  <body>
+
+    <h1>Othello</h1>
+
+    <div id= "score" class = "scoreboard">
+      Black: 02 - White: 02
+      <br>Pieces Left: 60
+    </div>
+
+
+    <div id="blackout">
+      <div id="box">
+        <!--From https://www.mastersofgames.com/rules/reversi-othello-rules.htm#:~:text=Basic%20Play,pieces%20are%20captured%20or%20reversed.-->
+        Rules<br><br>
+        Each piece played must be laid adjacent to an opponent's piece so that the 
+        opponent's piece or a row of opponent's pieces is flanked by the new piece 
+        and another piece of the player's colour. All of the opponent's pieces 
+        between these two pieces are 'captured' and turned over to match the 
+        player's colour.<br><br>
+
+        It can happen that a piece is played so that pieces or rows of pieces in 
+        more than one direction are trapped between the new piece played and other 
+        pieces of the same colour. In this case, all the pieces in all viable 
+        directions are turned over.<br><br>
+
+        The game is over when neither player has a legal move (i.e. a move that 
+        captures at least one opposing piece) or when the board is full.<br><br>
+
+        <a href="#" class="close">Close window</a>
+      </div>
+    </div>
+     
+    <a href="#blackout" class="open">Rules</a>
+
+    <br>
+
+    <div id="blackout2">
+      <div id="box2">
+       
+		
+       <a href="#" class="close2"> Close window</a>
+      </div>
+    </div>
+     
+    <a href="#blackout2" class="open2">Score</a>
+
+    <br>
+    <div id = login class = "login">
+      <form id = "loginform" class = "loginf">
+        <label for="fname">Username:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Password:</label><br>
+        <input type="password" id="lname" name="lname">
+        <input id = "submitButton" value = "Submit" type="button">
+
+      </form>
+    </div>
+    <div id= "msgBoard" class = "msgBoard">
+      Black's Turn
+    </div>
+    <div id= "butBox" class = "butBox">
+      <div id="surrender" class = "surrenderButton" tabindex = "8">
+        Surrender
+      </div>
+      <div id="PassTurn" class = "passButton" tabindex = "9">
+        Pass Turn
+      </div>
+      <div id="NewGameB" class="newGameButton" tabindex="9">
+        New Game
+      </div>
+    </div>
+    <div id = disclayer class = "board"></div>
+    <div id = border class = "border">
+      <!--<div id= "sideSelec" class = "optSel">
+        Start as:
+        <div id="white" class = "lOp" tabindex = "1">
+          White
+        </div>
+        <div id="black" class = "rOp" tabindex = "2">
+          Black
+        </div>
+      </div>
+      <br>-->
+      <div id= "aiSelect" class = "optSel2">
+        VS:
+        <div id="ai" class = "lOp" tabindex = "3">
+          AI
+        </div>
+        <div id="player" class = "rOp" tabindex = "4">
+          Player
+        </div>
+      </div>
+      <br>
+      <div id= "aiDSelect" class = "optSel3">
+        AI Dificulty:
+        <div id="hard" class = "lOp" tabindex = "5">
+          Hard
+        </div>
+        <div id="easy" class = "rOp" tabindex = "6">
+          Easy
+        </div>
+      </div>
+      <div id= "gameS" class = "optSel4">
+        <div id="gameButton" class = "startButton" tabindex = "7">
+          Game Start
+        </div>
+      </div>
+    </div>
+    
+	<div id = "messageLog" class = messageLog> 
+	Welcome to Othello!<br>
+  </div>
+  
+  <footer id="creators">
+    Eduardo Amaral up201805189 e Igor Espírito Santo up201800173
+  </footer>
+	ebsfbuignuisenginigeunig
+  </body>
+
+</html>
